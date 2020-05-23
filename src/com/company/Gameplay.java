@@ -23,7 +23,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
     private boolean x=true;
     private int wynik=0;
     private boolean alive = true;
-    private JButton button = new JButton()
+    private JButton button = new JButton();
 
     void start(int l) {
         wynik=0;
@@ -51,7 +51,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
         start(8);
 
         //generowanie polożenia owocow
-        while(x==true) {
+        while(x) {
             x = false;
             xFruit = random.nextInt(48) * size + 12;
             System.out.println(xFruit);
@@ -161,7 +161,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
             length++;
             wynik=wynik+50;
             x=true;
-            while (x == true) {
+            while (x) {
                 x = false;
                 xFruit = random.nextInt(48) * size + 12;
                 System.out.println(xFruit);
